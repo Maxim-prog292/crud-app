@@ -1,13 +1,112 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+    margin: 0;
+    padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+    width: 100vw;
+    height: 100vh;
+}
+#root {
+    width: inherit;
+    height: inherit;
+    background: #989898;
+    display: flex;
+    justify-content: center;
+}
+.main-app {
+    width: 1000px;
+    height: inherit;
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: relative;
+}
+.header-app {
+    width: inherit;
+    height: 50px;
+    font-size: 42px;
+    border-bottom: 1px solid grey;
+    padding-bottom: 5px ;
+    display: inline-flex;
+    border-radius: 0 0 5px 5px;
+    justify-content: center;
+}
+.section-app {
+    width: inherit;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 30vh);
+    column-gap: 10px;
+    row-gap: 10px;
+    padding: 10px;
+    overflow-y: scroll;
+}
+.no-data {
+    display: flex;
+    justify-content: center;
+}
+.profile {
+    width: 90%;
+    height: 100%;
+    border: 2px solid rgb(0, 0, 0);
+    box-sizing: border-box;
+}
+.profile-name {
+    font-size: 18px;
+}
+.profile-add-button {
+    height: 50px;
+}
+
+.profile-add-window  {
+    width: 300px;
+    height: 500px;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    background: #646464;
+    border-radius: 5px;
+    border: 1px solid grey;
+    left: calc(100vw - 90vw - 150px);
+    top: calc((100vh - 500px) / 2);
+}
+.profile-add-close {
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    border-radius: 5px;
+    left: 10px;
+    top: 10px;
+    line-height: 0;
+    font-size: 30px;
+    padding: 8px 10px 10px 8px;
+}
+.input-group {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+
+}
+input {
+    width: 200px !important;
+    height: 30px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    box-sizing: border-box;
+    border-radius: .25rem !important;
+}
+.profile-edit-buuton, .profile-update-buuton {
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.profile-update-buuton {
+    margin-bottom: 0;
 }
