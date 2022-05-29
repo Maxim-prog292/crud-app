@@ -20,7 +20,7 @@ Starts the json plaseholder database.
 
 ### Order of commands:
 
-npm run startbd
-npm start
+npm run startbd  
+npm start  
 
-# Run in different terminals
+### Run in different terminals
